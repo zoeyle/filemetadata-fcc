@@ -2,19 +2,12 @@ File Metadata Microservice
 =========================
 
 
-Your Project
+File Body Weight Scale
 ------------
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
+This is a study project to practice using `multer`. It allows file uploading and send the file to  `/tmp` folder and retrieve its information including its size. Then, t
 
 
 -------------------
 
-\ ゜o゜)ノ
+_(:3」∠)_
