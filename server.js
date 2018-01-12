@@ -8,8 +8,8 @@ var multer = require('multer');
 
 var upload = multer({ dest: '/assets'});
 
-app.post('/', upload('file'), function(req,res){
-  
+app.post('/upload', upload('uploadfile'), function(req,res){
+  res.JSON(req.file.size);
   
 });
 // we've started you off with Express, 
