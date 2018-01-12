@@ -7,17 +7,16 @@
 $(function() {
   console.log('hello world :o');
   
-  // $.get('/dreams', function(dreams) {
-  //   dreams.forEach(function(dream) {
-  //     $('<li></li>').text(dream).appendTo('ul#dreams');
-  //   });
-  // });
+//   $.get('/info', function(ret) {
+//     alert(ret);
+   
+//   });
 
   $('form').submit(function(event) {
     event.preventDefault();
     var dream = $('input').val();
-    $.get('/upload',function(ret){
-    alert(JSON.stringify(ret));
+    $.get('/info',function(ret){
+    alert(ret);
     
     });
     });
