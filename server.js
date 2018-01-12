@@ -21,8 +21,8 @@ app.get("/", function (request, response) {
 });
 
 app.post('/', upload.single('uploadfile'), function(req,res){
-  console.log(req.file);
-  res.redirect('/');
+ 
+  res.end(JSON.stringify(req.file.size));
   
 });
 
