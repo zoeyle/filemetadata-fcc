@@ -16,7 +16,10 @@ $(function() {
   $('form').submit(function(event) {
     event.preventDefault();
     var dream = $('input').val();
-    $.post('/upload' );
+    $.get('/upload',function(ret){
+     window.alert(JSON.stringify(ret));
+    
+    });
     });
   
 
