@@ -17,7 +17,7 @@ $(function() {
     event.preventDefault();
     var dream = $('input').val();
     $.get('/upload',function(ret){
-     window.alert(JSON.stringify(ret));
+    alert(JSON.stringify(ret));
     
     });
     });
