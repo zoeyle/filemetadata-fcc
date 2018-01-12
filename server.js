@@ -20,17 +20,17 @@ app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
-app.post('/upload', upload.single('uploadfile'), function(req,res){
+app.get('/upload', upload.single('uploadfile'), function(req,res){
  
-  size = JSON.stringify(req.file.size);
- console.log("up");
-  // res.send(size);
+  // size = ;
+ 
+  res.end(JSON.stringify(req.file.size));
 });
 
-app.get('/info', function(req,res){
-  console.log("info");
-  res.send(size);
-});
+// app.get('/info', function(req,res){
+  
+//   res.send(size);
+// });
 
 
 

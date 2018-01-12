@@ -14,7 +14,7 @@ $(function() {
 
 //   $('form').submit(function(event) {
 //     event.preventDefault();
-//     $.get('/info',function(ret){
+//     $.get('/upload',function(ret){
 //     alert(ret);
     
 //     });
