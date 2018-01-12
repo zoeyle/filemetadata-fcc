@@ -9,7 +9,7 @@ var multer = require('multer');
 var upload = multer({ dest: '/tmp'});
 
 app.post('/upload', upload.single('uploadfile'), function(req,res){
-  res.JSON(req.file.size);
+  res.json(req.file.size);
   
 });
 // we've started you off with Express, 
