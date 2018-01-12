@@ -28,9 +28,11 @@
     <main>
       <p class="bold">Oh hi,</p>
       <p>Tell me your hopes and dreams:</p>
-      <form>
-        <input type="text" maxlength="100" placeholder="Dreams!">
-        <button type="submit">Submit</button>
+      <form action="/" enctype="multipart/form-data" method="post">
+          <input type="file" name="file-to-upload">
+          <button type="submit" value="Upload"></button>
+<!--         <input type="text" maxlength="100" placeholder="Dreams!"> -->
+<!--         <button type="submit">Submit</button> -->
       </form>
       <section class="dreams">
         <ul id="dreams">

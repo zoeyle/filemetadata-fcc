@@ -8,10 +8,10 @@ var multer = require('multer');
 
 var upload = multer({ dest: '/assets'});
 
-app.post('/', upload('file'), function(req,res, next){
+app.post('/', upload('file'), function(req,res){
   
   
-}
+});
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
