@@ -8,7 +8,7 @@ var multer = require('multer');
 
 var upload = multer({ dest: '/tmp'});
 
-var size = 2;
+var size =null;
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
@@ -23,10 +23,12 @@ app.get("/", function (request, response) {
 app.post('/upload', upload.single('uploadfile'), function(req,res){
  
   size = JSON.stringify(req.file.size);
-  
+ console.log("up");
+  // res.send(size);
 });
 
 app.get('/info', function(req,res){
+  console.log("info");
   res.send(size);
 });
 

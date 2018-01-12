@@ -12,14 +12,13 @@ $(function() {
    
 //   });
 
-  $('form').submit(function(event) {
-    event.preventDefault();
-    var dream = $('input').val();
-    $.get('/info',function(ret){
-    alert(ret);
+//   $('form').submit(function(event) {
+//     event.preventDefault();
+//     $.get('/info',function(ret){
+//     alert(ret);
     
-    });
-    });
+//     });
+//     });
   
 
 });
