@@ -13,14 +13,14 @@ $(function() {
 //     });
 //   });
 
-  $('form').submit(function(event) {
-    event.preventDefault();
-    var dream = $('input').val();
-    $.get('/upload',function(ret){
-    alert(JSON.stringify(ret));
+//   $('form').submit(function(event) {
+//     event.preventDefault();
+//     var dream = $('input').val();
+//     $.get('/upload',function(ret){
+//     alert(JSON.stringify(ret));
     
-    });
-    });
+//     });
+//     });
   
 
 });
