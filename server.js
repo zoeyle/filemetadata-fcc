@@ -20,9 +20,9 @@ app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
-app.post('/', upload.single('uploadfile'), function(req,res){
+app.get('/upload', upload.single('uploadfile'), function(req,res){
  
-  res.end(JSON.stringify(req.file.size));
+  res.send(JSON.stringify(req.file.size));
   
 });
 
