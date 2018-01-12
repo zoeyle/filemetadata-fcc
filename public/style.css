@@ -48,6 +48,7 @@ input {
 }
 
 button {
+  float: right;
   font-size: 16px;
   border-radius: 3px;
   background-color: lightgrey;
